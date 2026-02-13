@@ -1,26 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Page Not Found</title>
-  <script>
-    // Get the current path from the URL
-    const path = window.location.pathname;
-
-    // Redirect to index.html and keep the original path in the hash
-    // e.g., /about → /#/about
-    window.location.replace(`/${'#' + path}`);
-  </script>
-</head>
-<body>
-  <h1>Redirecting…</h1>
-  <p>If you are not redirected, <a id="redirect-link" href="/">click here</a>.</p>
-
-  <script>
-    // Fallback link in case the first script fails
-    const link = document.getElementById('redirect-link');
-    link.href = '/' + '#' + window.location.pathname;
-  </script>
-</body>
+<html>
+  <head>
+    <meta http-equiv="refresh" content="0; url=/e-commerce-app/" />
+  </head>
+  <body></body>
 </html>
